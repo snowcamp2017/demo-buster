@@ -13,13 +13,12 @@ app.use(express.static('public'));
 
 app.get('/hello/world', (req, res) => {
   res.send({
-    message: "Hello 🌏!"
+    message: "Hello 🌏!",
+    whoami: "buster"
   })
 });
 
 // ...
-
-
 
 app.listen(port);
 console.log(`🌍 Web Application is started - listening on ${port}`);
